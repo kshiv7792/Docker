@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        
+        h1 {text-align: center;}
+        
+       p {text-align: center;}
+       div {text-align: center;}
+       
+        </style>
+
+         
+         <title>Fuel Efficiency Prediction</title>
+         <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+         <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+         <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+         
+    </head>
+    <marquee>Know Your Universityg</marquee>
+    <body style="background-color:white;">
+
+        <div class="login">
+            <img src="https://innodatatics.ai/assets/innologo.png">
+        <h1 style="color:red;">University Clustering</h1>
+        <form  action="/predict" method="POST">
+         <input type ="text" name = "sat" placeholder="Enter Your Sat Score"/>
+            
+
+            <br><br>
+            <input type ="text" name = "tap" placeholder="Enter The Top 10 Value"/>
+            <br><br>
+            <input type ="text" name = "accept" placeholder="Entaer The Accepe Vlaue"/>
+            <br><br>
+            <input type ="text" name = "sfratio" placeholder="Enter The SFRatio"/>
+            <br><br>
+            <input type ="text" name = "expenses" placeholder="Enter The Expenses"/>  
+           <br><br>
+            <input type ="text" name = "graderate" placeholder="Enter The GradeRate"/>  
+           
+            <P><input type = "submit" value = "submit"/></p>
+        </form>
+        <p><b>{{clust}}</b></p>
+
+            </div>
+    </body>
+</html>   
